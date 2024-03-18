@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Portfolio Website - John Doe</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore nostrum consectetur quas sed aspernatur, dolorum blanditiis temporibus amet similique.
+    <div class="wrapper">
+        
+        <div class="container">
+            <div class="navbar">
+                
+                <!-- These inside containers will contain logo along with full name & hyperlinks for other sections  -->
+
+                <div class="logo-container">
+                    <img src="images/userAssets/NavLogo.jpg" alt="Error: Logo Not Found!" class="logo">
+                    <div class="logo-text">ohn Doe</div>
+                </div>
+                
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="absolute faded-text">John Doe</div>
+            
+            <div class="hero-section-left">
+                <div class="hero-section-heading">Hi! John Doe</div>
+                <div class="hero-section-heading hero-section-sub-heading">I am a <span class="role"></span></div>
+                <div class="hero-section-description">
+                    I'm a Software Developer and here is my Portfolio Website. Here you'll learn about my journey as a Software Developer.
+                </div>
+                <div class="btn-pink" id="btn">Hire me</div>
+            </div>
+
+            <div class="hero-section-right">
+                <div class="absolute icons icon-dots">
+                    <img src="images/userAssets/dots.png" alt="Error: No image found!">
+                </div>
+                <div class="absolute icons icon-cube">
+                    <img src="images/userAssets/cube.png" alt="Error: No image found!">
+                </div>
+                <div class="absolute icons icon-circle">
+                    <img src="images/userAssets/circle.png" alt="Error: No image found!">
+                </div>
+                <div class="absolute icons icon-zigzag">
+                    <img src="images/userAssets/zigzags.png" alt="Error: No image found!">
+                </div>
+                <div class="absolute icons icon-plus">
+                    <img src="images/userAssets/plus.png" alt="Error: No image found!">
+                </div>
+                <div class="user-image">
+                    <img src="images/userAssets/UserImage.png" alt="Error: No image found!">
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>s
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Full Stack Web Developer",
+          "Frontend Developer",
+          "Android & iOS Developer",
+          "Backend Developer",
+          "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
 </body>
 </html>
